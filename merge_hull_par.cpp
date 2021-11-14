@@ -440,7 +440,7 @@ int main( int argc, char* argv[] )
 	std::mt19937 rng(rd());
 	std::uniform_int_distribution<int> uni(-100, 100);
     
-    vector<int> n = {100, 1000, 10000};
+    vector<int> n = {100000};
     vector<int> tcount = {10, 20, 50};
     for(int t = 0; t < tcount.size(); t++)
     {
