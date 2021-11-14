@@ -440,7 +440,7 @@ int main( int argc, char* argv[] )
 	std::mt19937 rng(rd());
 	std::uniform_int_distribution<int> uni(-100, 100);
     
-    vector<int> n = {100000};
+    vector<int> n = {100};
     vector<int> tcount = {10, 20, 50};
     for(int t = 0; t < tcount.size(); t++)
     {
@@ -449,7 +449,7 @@ int main( int argc, char* argv[] )
     {
         vector<pair<int, int>> points;
         ofstream myfile;
-        string name = "test_" + to_string(i) + "T" +to_string(tcount[t]) + ".txt";
+        string name = "test_" + to_string(4) + "T" +to_string(tcount[t]) + ".txt";
         myfile.open (name);
         for(int j = 0; j < n[i]; j++)
         {
